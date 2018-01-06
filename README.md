@@ -7,8 +7,8 @@
 
 **Sample files**
 
-- cusip.txt             : use for solution 1
-- file1.txt, file2.txt  : use for solution 2
+- cusip.txt             : use for *solution 1*
+- file1.txt, file2.txt  : use for *solution 2*
 
 **Sample usage of the runnable JAR file**
 
