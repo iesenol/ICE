@@ -29,8 +29,8 @@ public class Problem2 {
 		sc.close();
 
 		try ( 	BufferedReader in1 = new BufferedReader(new FileReader(inputFileName1)); 
-				BufferedReader in2 = new BufferedReader(new FileReader(inputFileName2)); 
-				PrintWriter    out = new PrintWriter(new BufferedWriter(new FileWriter(RESULT_FILE))); ) 
+			BufferedReader in2 = new BufferedReader(new FileReader(inputFileName2)); 
+			PrintWriter    out = new PrintWriter(new BufferedWriter(new FileWriter(RESULT_FILE))); ) 
 		{
 			String str1 = in1.readLine();
 			String str2 = in2.readLine();
@@ -39,12 +39,12 @@ public class Problem2 {
 
 			while(true) {
 
-				// if both reached the end-of-file 
+				// both reached the end-of-file 
 				if ( (str1 == null) && (str2 == null) ) {
 					break;
 				}
 
-				// if only one has an entry
+				// only one has an entry
 				if( (str1 != null) && (str2 == null) ){
 					out.println(str1);
 					System.out.println(str1);
@@ -56,7 +56,7 @@ public class Problem2 {
 					str2 = in2.readLine();
 				}
 
-				// if both have entries
+				// both have entries
 				else if( (str1 != null) && (str2 != null) ){
 					int comparison = str1.substring(0, KEY_LENGTH).compareToIgnoreCase(str2.substring(0, KEY_LENGTH));
 					if( comparison < 0 ) {
