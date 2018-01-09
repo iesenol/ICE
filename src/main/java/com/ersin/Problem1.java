@@ -41,7 +41,7 @@ public class Problem1 {
 						}
 					}
 					// Price.
-					if (NumberUtils.isParsable(str)) {
+					else {
 						try {
 							priceTicks.put(CUSIP, Double.parseDouble(str));
 						} catch (Exception e) {
